@@ -1,0 +1,70 @@
+name: DayTrace
+options:
+  bundleIdPrefix: dev.daytrace
+  deploymentTarget:
+    iOS: '18.0'
+    watchOS: '11.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: TV276GH9NH
+targets:
+  DayTrace:
+    type: application
+    platform: iOS
+    sources: [iPhone, Shared]
+    dependencies:
+      - target: DayTraceWatch
+        embed: true
+    info:
+      path: iPhone/Info.plist
+      properties:
+        CFBundleDisplayName: DayTrace
+        UILaunchScreen: {}
+        NSMicrophoneUsageDescription: Record audio you explicitly start.
+        NSHealthShareUsageDescription: Read health data you select for local daily context.
+        NSLocationWhenInUseUsageDescription: Associate a location you explicitly capture with nearby recordings.
+        NSSpeechRecognitionUsageDescription: Transcribe recordings on this device.
+        UIBackgroundModes: [audio]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.daytrace.app
+        CODE_SIGN_ENTITLEMENTS: iPhone/DayTrace.entitlements
+        TARGETED_DEVICE_FAMILY: '1'
+  DayTraceWatch:
+    type: application
+    platform: watchOS
+    sources: [Watch, Shared]
+    info:
+      path: Watch/Info.plist
+      properties:
+        CFBundleDisplayName: DayTrace
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: dev.daytrace.app
+        NSMicrophoneUsageDescription: Record audio you explicitly start.
+        UIBackgroundModes: [audio]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.daytrace.app.watchkitapp
+  DayTraceTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [NativeTests]
+    dependencies:
+      - target: DayTrace
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.daytrace.tests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  DayTrace:
+    build:
+      targets:
+        DayTrace: all
+    test:
+      targets: [DayTraceTests]
+  DayTraceWatch:
+    build:
+      targets:
+        DayTraceWatch: all

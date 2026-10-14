@@ -1,0 +1,27 @@
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+# Local acceptance evidence and scratch files
+work/
+validation/
+LEARNING_LOG.md
+PHONE_ACCEPTANCE.md
+PUBLIC_CORPUS_ACCEPTANCE.md
+WATCH_CURRENT_STATUS.md
+VALIDATION.md
+IMPLEMENTATION.md
+PRD_ACCEPTANCE.md
+
+# Personal data and credentials
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.daytracebackup
+*.m4a
+*.caf
+*.wav
+*.mp3
