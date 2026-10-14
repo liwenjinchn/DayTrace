@@ -171,7 +171,7 @@ struct ChatView: View {
                             .frame(maxWidth: .infinity)
                     }.buttonStyle(.borderedProminent).controlSize(.large)
                         .disabled(question.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || busy)
-                    Button { choosing = true } label: { Label("手动选择原文", systemImage: "checklist") }.disabled(busy)
+                    Button { choosing = true } label: { FeatureLabel(title: "手动选择原文", subtitle: "", symbol: "checklist", color: .blue) }.disabled(busy)
                 } header: { Text("你的问题") } footer: { Text("查找记录只在本机进行，不会发送 AI 请求。") }
                 if busy { Section { Button("取消请求") { requestTask?.cancel() } } }
                 Section {
