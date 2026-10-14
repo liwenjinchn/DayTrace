@@ -178,7 +178,7 @@ struct ChatView: View {
                     DisclosureGroup {
                         Toggle("限定查询日期", isOn: $dateFilter)
                         if dateFilter { DatePicker("开始", selection: $since, displayedComponents: .date); DatePicker("结束", selection: $until, displayedComponents: .date) }
-                    } label: { Label("查询范围", systemImage: "calendar") }
+                    } label: { FeatureLabel(title: "查询范围", subtitle: "", symbol: "calendar", color: .blue) }
                 }
                 if let answer { Section("回答") { Text(answer.answer).textSelection(.enabled); if !store.memoryContextsAreCurrent(answerMemories, sources: sources) { Text("本次记忆上下文已变化，回答需重新核对").foregroundStyle(.orange) }; ForEach(sources.filter { answer.sourceIDs.contains($0.id) }) { SourceRow(source: $0) } } }
                 if !sources.isEmpty {
