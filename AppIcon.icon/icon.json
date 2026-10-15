@@ -1,0 +1,64 @@
+{
+  "fill": {
+    "solid": "extended-srgb:0.09020,0.09804,0.11765,1.00000"
+  },
+  "groups": [
+    {
+      "layers": [
+        {
+          "image-name": "Red-Waveform.svg",
+          "name": "Red waveform - 10 lines"
+        }
+      ],
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.15
+      },
+      "specular": true,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    },
+    {
+      "layers": [
+        {
+          "image-name": "Blue-Line.svg",
+          "name": "Blue line - 90 degrees"
+        }
+      ],
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.15
+      },
+      "specular": true,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    },
+    {
+      "layers": [
+        {
+          "image-name": "Sun.svg",
+          "name": "Weather sun"
+        }
+      ],
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.15
+      },
+      "specular": true,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  }
+}

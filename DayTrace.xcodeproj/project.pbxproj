@@ -45,6 +45,7 @@
 		A390584A81F7F5B11DC31F06 /* PhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F8008874DF27FA6C24D3E /* PhoneApp.swift */; };
 		A75EDAAA8B193138E25B4EB5 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47E4142791D2DEED523F1E /* AppAppearance.swift */; };
 		A774911E1987C25351E88F64 /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C7B65C54771C3E423C9D5 /* DaysView.swift */; };
+		ABA8489A42AE6F4D9E6D81FA /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5063593A6929FED7BF397A21 /* AppIcon.icon */; };
 		AD08DAB9D7E0CD965CE3A96D /* AIWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F499DD76041B731A3957BC /* AIWire.swift */; };
 		AEC6340D99635F2A8E0BDA6D /* SearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC846183CA6544272AD5DA5 /* SearchIndex.swift */; };
 		C79FD132B6B8D905912FD088 /* Retention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACE3BE1BE21EECDC692293 /* Retention.swift */; };
@@ -114,6 +115,7 @@
 		43F499DD76041B731A3957BC /* AIWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWire.swift; sourceTree = "<group>"; };
 		4DCF61FC2F18D62E9C9E90FB /* SharePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePreviewView.swift; sourceTree = "<group>"; };
 		4ECDDF9017B91FE8D3BEF97E /* AITransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITransport.swift; sourceTree = "<group>"; };
+		5063593A6929FED7BF397A21 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		59265AF5BC2AC46C295F8C99 /* ProcessingQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingQueue.swift; sourceTree = "<group>"; };
 		62ACE3BE1BE21EECDC692293 /* Retention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retention.swift; sourceTree = "<group>"; };
 		6D51BFE3CDA580FB2D417D3E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		D17C03F33C9D9E6BE1AE3D80 = {
 			isa = PBXGroup;
 			children = (
+				5063593A6929FED7BF397A21 /* AppIcon.icon */,
 				30DB5AD6B161DE1FA2177FE8 /* iPhone */,
 				A83D4A5F8896FB90A0420F9B /* NativeTests */,
 				1554FD432843443EF58D2052 /* Shared */,
@@ -256,6 +259,7 @@
 			buildConfigurationList = 2B2A2FDB0989E09717FD7117 /* Build configuration list for PBXNativeTarget "DayTrace" */;
 			buildPhases = (
 				8EBC255207BB027C1AD34936 /* Sources */,
+				2F217987250842E67A7B3F02 /* Resources */,
 				D7F485893D9A1A836D56F403 /* Embed Watch Content */,
 			);
 			buildRules = (
@@ -331,6 +335,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F217987250842E67A7B3F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA8489A42AE6F4D9E6D81FA /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B7665AAA399054CA7401A23 /* Sources */ = {

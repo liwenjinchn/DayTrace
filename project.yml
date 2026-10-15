@@ -13,7 +13,12 @@ targets:
   DayTrace:
     type: application
     platform: iOS
-    sources: [iPhone, Shared]
+    sources:
+      - iPhone
+      - Shared
+      - path: AppIcon.icon
+        buildPhase: resources
+        type: file
     dependencies:
       - target: DayTraceWatch
         embed: true
